@@ -1,4 +1,3 @@
-// const path = require("path");
 const ErrorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
 const Book = require("../model/Book");
@@ -7,7 +6,8 @@ const Book = require("../model/Book");
 // @route  GET /api/v1/books
 // @access Public
 exports.getBooks = asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedResults);
+  const book = await Book.find();
+  res.status(200).json({ success: true, count: book.length, data: book });
 });
 
 // @desc   Get single Book
@@ -27,10 +27,6 @@ exports.getBook = asyncHandler(async (req, res, next) => {
 // @access Private
 
 exports.createBook = asyncHandler(async (req, res, next) => {
-  console.log("Website from request body:", req.body.website);
-  // Add user to req.body
-  // req.body.user = req.user.id;
-
   const book = await Book.create(req.body);
   res.status(201).json({
     success: true,
