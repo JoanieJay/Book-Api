@@ -1,0 +1,37 @@
+[
+  {
+    "id": "5d713995b721c3bb38c1f5d0",
+    "title": "Wednesday",
+    "authorId": "5d7a514b5d2c12c7449be045",
+    "status": "unread",
+    "location": "shelf"
+  },
+  {
+    "id": "6d713995b721c3bb38c1f5dt",
+    "title": "Fences",
+    "authorId": "5d7b514b5d2c12c7449be048",
+    "status": "reading",
+    "location": "shelf"
+  },
+  {
+    "id": "6d71t995b721c3bb38c1f5d4",
+    "title": "Robin Hood",
+    "authorId": "4d7a514b5d2c12c7449ba045",
+    "status": "read",
+    "location": "lost"
+  },
+  {
+    "id": "1e713995b767c3bb38c1f5dt",
+    "title": "Things fall apart",
+    "authorId": "5f7a514b5d2c12c7449be023",
+    "status": "read",
+    "location": "loaned"
+  },
+  {
+    "id": "8d713995b726hc3bb38c1f5dt",
+    "title": "Squid Game",
+    "authorId": "9d7a514b5d2c12d7449be085",
+    "status": "reading",
+    "location": "shelf"
+  }
+]
