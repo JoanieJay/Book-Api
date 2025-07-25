@@ -13,6 +13,7 @@ connectDB();
 
 //Route files
 const books = require("./routes/books");
+const borrowers = require("./routes/borrower");
 
 const app = express();
 
@@ -26,9 +27,11 @@ if (process.env.NODE_ENV === "development") {
 
 // Mount routers
 app.use("/api/v1/books", books);
+app.use("/api/v1/borrowers", borrowers);
 
 // Mount routers
 app.use("/api/v1/book", books);
+app.use("/api/v1/borrower", borrowers);
 
 app.use(errorHandler);
 
